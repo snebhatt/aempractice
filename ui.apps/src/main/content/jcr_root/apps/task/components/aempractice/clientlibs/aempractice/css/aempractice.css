@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+.comp_title {
+	text-align: center;
+	color: green;
+}
+
+.cmp_nav_list {
+	list-style-type: none;
+	padding: 0;
+	column-count: 2;
+	column-gap: 20px;
+	text-align: center;
+}
+
+.cmp_nav_list li {
+	margin-bottom: 5px;
+}
+
+.cmp_nav_list li b {
+	color: blue;
+	text-align: center;
+}
+
+.cmp_nav_list li i {
+	color: red;
+	text-align: center;
+}
+
+.centered-container {
+    position: relative;
+}
+
+#centeredImage {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}

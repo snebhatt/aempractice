@@ -1,0 +1,21 @@
+<sly data-sly-use.model="com.adobe.aem.task.core.models.AemPracticeModel" />
+
+<div data-sly-test="${wcmmode.edit}">
+    <p>Author mode</p>
+</div>
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='aempractice.clientlib'}"/>
+
+<h1 class="comp_title"=>${properties.title}</h1>
+
+<div class="centered-container" data-sly-test="${model.backgroundImage && !wcmmode.edit}">
+    <img id="centeredImage" src="${model.imagePath}" alt="Background Image">
+</div>
+
+<sly data-sly-test="${model.configured}">
+	<ul data-sly-list.item="${model.navList}" class="cmp_nav_list">
+	       <li class=""><b>${item.itemTitle}</b></li>
+	       <li class=""><i>${item.itemPath}</i></li>
+	</ul>
+</sly>
+    
