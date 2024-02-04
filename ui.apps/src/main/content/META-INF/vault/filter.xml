@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/task/clientlibs"/>
+    <filter root="/apps/task/components"/>
+    <filter root="/apps/task/i18n"/>
+</workspaceFilter>
